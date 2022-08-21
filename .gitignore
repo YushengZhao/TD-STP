@@ -1,0 +1,14 @@
+.ftpignore
+.ftpconfig
+.vscode
+.idea
+
+# Byte-compiled / optimized / DLL files
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+*$py.class
+*.swp
+
+datasets
+!datasets/.gitkeep
