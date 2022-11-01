@@ -37,13 +37,17 @@ To test on R2R:
 cd finetune_src
 python ./scripts/test_r2r.sh
 ```
-To train on REVERIE:
+To test on REVERIE:
 ```shell
 cd finetune_src
-python ./scripts/test_r2r.sh
+python ./scripts/test_reverie.sh
 ```
 
-Note that some file paths in the code may require slight adaptation.
+Note that
+
+* Some file paths in the code may require slight adaptation according to your local environment.
+* To achieve the RGS and RGSPL of REVERIE in the paper, you need to train a separated [ViL-BERT](https://github.com/facebookresearch/vilbert-multi-task) on the REVERIE training split and perform the referring part at the end of the navigation. Since the referring part is not the contribution of our paper and is easy to tune, we do not plan to release that part of code. 
+
 
 ## Acknowledgement
 
